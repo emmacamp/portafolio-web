@@ -18,8 +18,10 @@ export const Education = () => {
     }
 
     return (
-        <section className='items-center mt-24 md:mt-36'>
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">{education.title}</h2>
+        <section className='mt-24 md:mt-36 bg-blue-100 dark:bg-gray-700 rounded-2xl pb-44 pt-32 '>
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center p-3  rounded-sm dark:text-white">
+                {education.title}
+            </h2>
             <div className="flex gap-3 flex-wrap justify-center">
                 {
                     education.cards.map((card, index) => (

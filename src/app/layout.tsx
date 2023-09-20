@@ -1,5 +1,5 @@
 'use client'
-import { NavBar } from '@/components/NavBar'
+import { NavBar } from '@/components/NavBar/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body className={inter.className}>
-        <Toaster richColors/>
+        <Toaster richColors />
         <Flowbite>
           <div className="bg-white dark:bg-slate-900 min-h-screen pt-3">
             <div className="container mx-auto">
@@ -31,7 +31,7 @@ export default function RootLayout({
               </header>
               {children}
             </div>
-              <FooterFB />
+            <FooterFB />
           </div>
         </Flowbite>
       </body>
