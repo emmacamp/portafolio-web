@@ -3,49 +3,54 @@ import Link from 'next/link';
 import { Dropdown, Navbar, Avatar, DarkThemeToggle } from 'flowbite-react';
 import { LaguagueSVG } from '@/assets/LanguagueSVG';
 import Image from 'next/image';
-import './navbar.css'
-import { use, useEffect, useRef, useState } from 'react';
-import { Inter } from 'next/font/google';
-
-
-
-
+import './navbar.css';
+import { toast } from 'sonner';
 
 export const NavBar = () => {
 
-    const listItems = document.querySelectorAll('#nav-links > ul a') as NodeListOf<HTMLElement>;
-    const backdrop = document.querySelector('#menu-backdrop')! as HTMLElement;
+    if (typeof document !== 'undefined') {
+        console.log('document is defined');
+        const listItems = document.querySelectorAll('.nav-links > ul > a') as NodeListOf<HTMLElement>;
+        const backdrop = document.querySelector('#menu-backdrop')! as HTMLElement;
 
-    listItems.forEach((item) => {
-        item.addEventListener('mouseenter', () => {
-            const { left, top, width, height } = item.getBoundingClientRect();
-            backdrop.style.setProperty('--left', `${left}px`);
-            backdrop.style.setProperty('--top', `${top}px`);
-            backdrop.style.setProperty('--width', `${width}px`);
-            backdrop.style.setProperty('--height', `${height}px`);
+        listItems.forEach((item) => {
+            console.log(item);
+            item.addEventListener('mouseenter', () => {
+                const { left, top, width, height } = item.getBoundingClientRect();
+                console.log({left, top, width, height});
+                backdrop.style.setProperty('--left', `${left}px`);
+                backdrop.style.setProperty('--top', `${top}px`);
+                backdrop.style.setProperty('--width', `${width}px`);
+                backdrop.style.setProperty('--height', `${height}px`);
 
-            backdrop.style.opacity = '1';
-            backdrop.style.visibility = 'visible';
 
+                backdrop.style.opacity = '1';
+                backdrop.style.visibility = 'visible';
+
+            });
+
+            item.addEventListener('mouseleave', () => {
+                backdrop.style.opacity = '0';
+                backdrop.style.visibility = 'hidden';
+
+            });
         });
 
-        item.addEventListener('mouseleave', () => {
-            backdrop.style.opacity = '0';
-            backdrop.style.visibility = 'hidden';
+    }
 
-        });
-    });
-
-
+    const handleLanguageClick = (): void => {
+        // e.preventDefault();
+        toast.error('This feature is not available yet');
+    }
 
 
     return (
         <>
-            <div id="menu-backdrop" className='absolute bg-black/5 backdrop-blur-lg rounded 
+            <div id="menu-backdrop" className='absolute bg-black/5 dark:bg-slate-700 backdrop-blur-lg rounded 
             translate-x-[var(--left)] translate-y-[var(--top)] 
             left-0 top-0 w-[var(--width)] h-[var(--height)]
-            transition-all duration-500 ease-in-out opacity-0'
-            />
+            transition-all duration-500 ease-in-out opacity-0 '
+            ></div>
 
 
             <Navbar
@@ -69,11 +74,11 @@ export const NavBar = () => {
                                 Languages
                             </span>
                         </Dropdown.Header>
-                        <Dropdown.Item className='gap-2'>
+                        <Dropdown.Item className='gap-2' onClick={handleLanguageClick}>
                             <Image src='/usa.svg' alt='united state' width={20} height={20}></Image>
                             English
                         </Dropdown.Item>
-                        <Dropdown.Item className='gap-2'>
+                        <Dropdown.Item className='gap-2' onClick={handleLanguageClick}>
                             <Image src='/rep-dom.svg' alt='dominican republic' width={20} height={20}></Image>
                             Spanish
                         </Dropdown.Item>

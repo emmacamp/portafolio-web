@@ -31,7 +31,7 @@
     "subTitle": "Bootcamps and more",
     "cards": [
       {
-        "date": "Jenuary 2019 - Present",
+        "date": "Jan 2019 - Present",
         "title": "self-taught",
         "text": "I'm a person who loves learning new technologies and doing projects with said technologies."
       },
@@ -50,7 +50,7 @@
         "text": "I do the web development school in this platform, where learned Fundamentals HTML, CSS, Javascript also React and Node"
       },
       {
-        "date": "September 2021 - Febrary 2022",
+        "date": "Sep 2021 - Feb 2022",
         "title": "FreeCodeCamp",
         "text": "I decided to take a few bootcamps on this platform because of its prestige and took Web Responsive Design, Javascript Algorithms and Data Structures and Backend Development and Apis"
       }

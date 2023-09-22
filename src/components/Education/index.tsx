@@ -4,6 +4,7 @@ import { Card } from '@/components/Card'
 
 import './education.css'
 import { useLanguage } from '@/Languages/languageStorage';
+import { Section } from '../Section';
 
 export const Education = () => {
 
