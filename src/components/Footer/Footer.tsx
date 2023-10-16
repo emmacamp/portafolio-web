@@ -9,8 +9,8 @@ export const FooterFB = () => {
             <div className="w-full">
                 <div className="w-full sm:flex sm:items-center sm:justify-between">
                     <Footer.Copyright
-                        by="Emmanuel Popa™"
-                        href="#"
+                        by="Emmanuel Aaron Popa Campusano"
+                        href=""
                         year={new Date().getFullYear()}
                     />
                     <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">

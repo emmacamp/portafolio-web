@@ -1,7 +1,6 @@
 'use client';
 
 import { useLanguage } from '@/Languages/languageStorage'
-import { Contact } from '@/components/Contact';
 import { Education } from '@/components/Education'
 import Image from 'next/image';
 import myPic from '../assets/epopa.png'
@@ -9,6 +8,8 @@ import { Section } from '@/components/Section';
 import Ticket from '@/components/Ticket';
 import { FLAVORS } from '@/flavors/data'
 import { useState } from 'react';
+import { Credentials } from '@/components/Credentials/Credentials';
+import { reactLogo, nodeJSLogo, figmaLogo, viteLogo, typescriptLogo, tailwindLogo, bootstrapLogo, javascriptLogo, htmlLogo, cssLogo, sassLogo } from '@/assets/technologies'
 
 export default function Home({ initialFlavor }: { initialFlavor: string }) {
   const { language: { header } } = useLanguage();
@@ -19,8 +20,65 @@ export default function Home({ initialFlavor }: { initialFlavor: string }) {
   const [username, setUsername] = useState('emmacamp')
 
 
+  const technologiesIcons = [
+    {
+      src: reactLogo,
+      alt: 'React Logo',
+      className: 'logo react'
+    },
+    {
+      src: figmaLogo,
+      alt: 'Figma Logo',
+      className: 'logo figma'
+    },
+    {
+      src: viteLogo,
+      alt: 'Vite Logo',
+      className: 'logo vite'
+    }, {
+      src: typescriptLogo,
+      alt: 'Typescript Logo',
+      className: 'logo typescript'
+    }, 
+    { 
+      src: tailwindLogo,
+      alt: 'Tailwindcss Logo',
+      className: 'logo tailwind'
+    },
+    {
+      src: bootstrapLogo,
+      alt: 'Bootstrap Logo',
+      className: 'logo bootstrap'
+    },
+    {
+      src: javascriptLogo,
+      alt: 'Javascript Logo',
+      className: 'logo javascript'
+    },
+    {
+      src: htmlLogo,
+      alt: 'Html Logo',
+      className: 'logo html'
+    },
+    {
+      src: cssLogo,
+      alt: 'Css Logo',
+      className: 'logo css'
+    },
+    {
+      src: sassLogo,
+      alt: 'Sass Logo',
+      className: 'logo sass'
+    },
+    {
+      src: nodeJSLogo,
+      alt: 'Node js Logo',
+      className: 'logo nodejs'
+    },
+  ];
+
   return (
-    <main className=" mt-24 md:mt-32">
+    <main className=" mt-24 md:mt-32 animate__animated animate__fadeIn">
       <section className="relative flex flex-col-reverse items-center gap-4">
         <div className="flex flex-col justify-center items-center">
           <p className="font-bold text-2xl md:text-5xl text-center mb-7">
@@ -50,13 +108,16 @@ export default function Home({ initialFlavor }: { initialFlavor: string }) {
           <Image
             src={myPic}
             alt="Picture of the author"
-            className='dark:shadow-slate-950 dark:shadow-lg rounded-full shadow-2xl  '
+            className='dark:shadow-slate-950 dark:shadow-lg rounded-full shadow-2xl'
             width={200}
             height={200}
           />
         </div>
       </section>
       <Education />
+
+      <Credentials />
+
       <Section title='Quote'>
         <figure className="max-w-screen-md mx-auto text-center rounded-lg  py-5 border-2 border-slate-500">
           <svg className="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
@@ -81,21 +142,37 @@ export default function Home({ initialFlavor }: { initialFlavor: string }) {
             </div>
           </figcaption>
         </figure>
-      <Section title='Github Card'>
-          <div className='flex items-center justify-center max-w-5xl mx-auto mt-10 flex-0'>
-            <Ticket
-              transition={!initialFlavor}
-              number={number}
-              flavor={flavor}
-              user={{
-                avatar: username ? `https://unavatar.io/github/${username}` : null,
-                username
-              }}
-            />
-          </div>
-        </Section>
       </Section>
-      <Contact />
+      <Section title='Technologies'>
+        <div className="logos flex flex-wrap ">
+          {technologiesIcons.map((icon, index) => (
+            <Image
+              key={index}
+              src={icon.src}
+              alt={icon.alt}
+              className={icon.className}
+              width={100}
+              height={100}
+            />
+          ))}
+        </div>
+
+      </Section>
+
+      <Section title='Github Card'>
+        <div className='flex items-center justify-center max-w-5xl mx-auto mt-10 flex-0'>
+          <Ticket
+            transition={!initialFlavor}
+            number={number}
+            flavor={flavor}
+            user={{
+              avatar: username ? `https://unavatar.io/github/${username}` : null,
+              username
+            }}
+          />
+        </div>
+      </Section>
+
     </main>
   )
 }

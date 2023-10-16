@@ -6,3 +6,78 @@ html {
   scroll-behavior: smooth;
 }
 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo.javascript:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.logo.typescript:hover {
+  filter: drop-shadow(0 0 2em #007accaa);
+}
+
+.logo.figma:hover {
+  filter: drop-shadow(0 0 2em #f24e1eaa);
+}
+
+.logo.tailwind:hover {
+  filter: drop-shadow(0 0 2em #06b6d4aa);
+}
+
+.logo.bootstrap:hover {
+  filter: drop-shadow(0 0 2em #7952b3aa);
+}
+
+.logo.sass:hover {
+  filter: drop-shadow(0 0 2em #c69aa7aa);
+}
+
+.logo.css:hover {
+  filter: drop-shadow(0 0 2em #2965f1aa);
+}
+
+.logo.html:hover {
+  filter: drop-shadow(0 0 2em #e34c26aa);
+}
+
+.logo.nodejs:hover {
+  filter: drop-shadow(0 0 2em #68a063aa);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
