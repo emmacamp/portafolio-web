@@ -6,6 +6,7 @@ import { BiLogoReact, BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi
 import { RiJavascriptFill } from 'react-icons/ri'
 import { SiVite, SiVisualstudiocode } from 'react-icons/si'
 import { BsGithub } from 'react-icons/bs'
+import Image from 'next/image';
 
 
 
@@ -107,7 +108,7 @@ export default function Ticket({ transition, number, flavor, user }: TicketProps
 
                             {avatar && (
                                 <div className="absolute z-50 flex flex-col items-center justify-center p-4 overflow-hidden font-mono text-white md:p-6 right-2 top-2 gap-y-2">
-                                    <img
+                                    <Image
                                         crossOrigin="anonymous"
                                         className="block w-10 h-10 rounded-full md:w-20 md:h-20"
                                         src={avatar}
