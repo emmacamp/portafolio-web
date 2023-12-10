@@ -19,7 +19,7 @@ export const Credentials = () => {
 
     const information: Credentials[] = [
         {
-            date: 'January 2019 - Present',
+            date: 'November 2022- Present',
             company: 'Freelance',
             description: 'Actually I am working as a Freelance, I have worked with different clients, developing web applications.',
             link: 'https://www.fiverr.com/emmacamp',
