@@ -5,7 +5,7 @@ import { HiCalendar } from 'react-icons/hi';
 
 export default function VerticalTimeline() {
     return (
-        <Timeline>
+        <Timeline >
             <Timeline.Item>
                 <Timeline.Point icon={HiCalendar} />
                 <Timeline.Content>

@@ -9,4 +9,7 @@ export { default as htmlLogo } from './html.svg';
 export { default as cssLogo } from './css.svg';
 export { default as sassLogo } from './sass.svg';
 export { default as nodeJSLogo } from "./nodejs.svg";
+export { default as githubLogo } from "./github.svg";
+export { default as gitLogo } from "./git.svg";
+export { default as mongodbLogo } from "./mongodb.svg";
 

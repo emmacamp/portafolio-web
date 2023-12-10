@@ -13,7 +13,7 @@ export const Landing = ({
     return (
         <Flowbite>
             <Toaster richColors />
-            <div className="bg-white dark:bg-slate-900 min-h-screen pt-3">
+            <div className="bg-white dark:bg-slate-900 min-h-screen pt-3 relative pb-10">
                 <div className="container mx-auto">
                     <header>
                         <NavBar />

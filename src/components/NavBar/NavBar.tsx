@@ -38,8 +38,8 @@ export const NavBar = () => {
 
     }
 
-    const handleLanguageClick = (): void => {
-        toast.error('This feature is not available yet');
+    const handleLanguageClick = (): string | number => {
+       return toast.error('This feature is not available yet');
     }
 
 
@@ -54,7 +54,7 @@ export const NavBar = () => {
             <Navbar 
                 fluid
                 rounded
-                className="bg-white  dark:bg-slate-800 container mx-auto text-gray-900 dark:text-gray-300"
+                className="bg-white dark:bg-slate-900  dark:sm:bg-slate-800  container mx-auto text-gray-900 dark:text-gray-300"
             >
                 <Link href='/' className='p-0 m-0'>
                     <span className="font-extrabold">POPA<span className="palo text-blue-600 mx-1" >/</span>DEV</span>
@@ -91,8 +91,8 @@ export const NavBar = () => {
                 </div>
                 <Navbar.Collapse id='nav-links' className='nav-links dark:text-gray-300 relative [&>ul>a]:space-x-0 [&>ul>a]:text-center '>
                     <Link href='/' className='a-element px-4 py-2'>Home</Link>
-                    <Link href='/#about' className='a-element px-4 py-2'>About</Link>
-                    <Link href='/#project' className='a-element px-4 py-2'>Projects</Link>
+                    <Link href='/about' className='a-element px-4 py-2'>About</Link>
+                    <Link href='/projects' className='a-element px-4 py-2'>Projects</Link>
                     <Link href='/contact' className='a-element px-4 py-2'>Contact</Link>
                 </Navbar.Collapse>
             </Navbar>

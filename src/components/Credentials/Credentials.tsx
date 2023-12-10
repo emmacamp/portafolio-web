@@ -2,6 +2,7 @@
 
 import { Section } from "../Section"
 import { Button, Timeline } from 'flowbite-react';
+import Link from "next/link";
 import { HiCalendar } from 'react-icons/hi';
 
 type Credentials = {
@@ -20,14 +21,16 @@ export const Credentials = () => {
         {
             date: 'January 2019 - Present',
             company: 'Freelance',
-            description: 'Actually I am working as a Freelance, I have worked with different clients, developing web applications.'
+            description: 'Actually I am working as a Freelance, I have worked with different clients, developing web applications.',
+            link: 'https://www.fiverr.com/emmacamp',
+            linkText: 'See more'
         },
         {
             date: 'December 2022 - Present',
             company: 'Dirección General de Contrataciones Públicas',
             description: 'I am currently working as a Frontend Developer at the General Directorate of Public Procurement in the Dominican Republic.',
-            link: 'https://www.comprasdominicana.gov.do/',
-            linkText: 'See more'
+            // link: 'https://www.comprasdominicana.gov.do/',
+            // linkText: 'See more'
         },
         {
             date: 'May 2022 - December 2020',
@@ -38,7 +41,7 @@ export const Credentials = () => {
 
 
     return (
-        <Section title='Work Experience' className=''>
+        <Section title='Work Experience' className='px-5 sm:px-0'>
             <Timeline>
                 {
                     information.map(({ company, date, description, link, linkText }) => (
@@ -58,11 +61,13 @@ export const Credentials = () => {
                                 </Timeline.Body>
                                 {
                                     link && (
-                                        <Button color="gray">
-                                            <p>
-                                                {linkText}
-                                            </p>
-                                        </Button>
+                                        <Link href={link} target="_blank" rel="noopener noreferrer">
+                                            <Button color="gray">
+                                                <p>
+                                                </p>
+                                                    {linkText}
+                                            </Button>
+                                        </Link>
                                     )
                                 }
                             </Timeline.Content>

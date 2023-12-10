@@ -12,6 +12,33 @@ html {
   will-change: filter;
   transition: filter 300ms;
 }
+.logo-card {
+  will-change: filter;
+  transition: filter 300ms;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -57,6 +84,16 @@ html {
   filter: drop-shadow(0 0 2em #68a063aa);
 }
 
+.logo.git:hover {
+  filter: drop-shadow(0 0 2em #f34f29aa);
+}
+
+.logo.github:hover {
+  filter: drop-shadow(0 0 2em #181717aa);
+}
+.logo.mongodb:hover {
+  filter: drop-shadow(0 0 2em #4db33daa);
+}
 
 @keyframes logo-spin {
   from {
