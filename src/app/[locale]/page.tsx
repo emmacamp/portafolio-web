@@ -9,8 +9,30 @@ import { Quote } from '@/components/Quote';
 
 
 export default function Home() {
-  const t = useTranslations('Index');
+  const header = useTranslations('Index.header');
+  const timeline = useTranslations('Index.experience.timeline.freelace');
+  const government = useTranslations('Index.experience.timeline.government');
+  const talendig = useTranslations('Index.experience.timeline.talendig');
 
+  const information = [
+    {
+      date: timeline('date'),
+      company: timeline('company'),
+      description: timeline('description'),
+      link: timeline('link'),
+      linkText: timeline('linkText')
+    },
+    {
+      date: government('date'),
+      company: government('company'),
+      description: government('description'),
+    },
+    {
+      date: talendig('date'),
+      company: talendig('company'),
+      description: talendig('description'),
+    }
+  ]
 
   return (
     <main className=" mt-24 md:mt-32 animate__animated animate__fadeIn">
@@ -20,7 +42,7 @@ export default function Home() {
             Emmanuel A. Popa Campusano
           </p>
           <p className="text-slate-500 dark:text-slate-400 text-center mb-7">
-              {t('header.headline')}
+            {header('headline')}
 
           </p>
           <a
@@ -30,7 +52,7 @@ export default function Home() {
             hover:text-white rounded-md border-2 hover:bg-blue-600  border-slate-400 text-slate-900  
             dark:border-blue-600 dark:text-white"
           >
-            {t('header.button.text')}
+            {header('button.text')}
           </a>
         </div>
         <div className="flex justify-center items-center">
@@ -45,7 +67,7 @@ export default function Home() {
       </section>
 
       <Education />
-      <Credentials />
+      <Credentials information={information} />
       <Quote />
       <Technologies />
     </main>

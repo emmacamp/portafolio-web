@@ -29,18 +29,6 @@ export const pathnames = {
     en: "/projects",
     es: "/proyectos",
   },
-
-  // Dynamic params are supported via square brackets
-  "/news/[articleSlug]-[articleId]": {
-    en: "/news/[articleSlug]-[articleId]",
-    es: "/neuigkeiten/[articleSlug]-[articleId]",
-  },
-
-  // Also (optional) catch-all segments are supported
-  "/categories/[...slug]": {
-    en: "/categories/[...slug]",
-    es: "/kategorien/[...slug]",
-  },
 } satisfies Pathnames<typeof locales>;
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

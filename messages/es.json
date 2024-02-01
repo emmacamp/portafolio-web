@@ -3,7 +3,7 @@
     "nav": {
       "routes": {
         "home": "Inicio",
-        "about": "Sobre mi",
+        "about": "Sobre mí",
         "projects": "Proyectos",
         "contact": "Contacto"
       }
@@ -17,27 +17,32 @@
     },
     "education": {
       "title": "Educación",
-      "subTitle": "Bootcamps y mas",
+      "subTitle": "Bootcamps y Más",
       "cards": [
         {
-          "title": "self-taught",
-          "date": "Enero 2019 - Presente",
-          "text": "Soy autodidacta, aprendo de todo y de todos, me gusta aprender y compartir lo que aprendo."
+          "date": "Ene 2019 - Presente",
+          "title": "Autodidacta",
+          "text": "Soy una persona que ama aprender nuevas tecnologías y hacer proyectos con dichas tecnologías."
         },
         {
-          "title": "Platzi",
-          "date": "Junio 2020 - Junio 2021",
-          "text": "Realice la escuela de desarrollo web en esta plataforma, donde aprendí Fundamentos HTML, CSS, Javascript también React y Node."
-        },
-        {
+          "date": "Ene 2021 - Dic 2023",
           "title": "ITLA",
-          "date": "Enero 2021 - Septiembre 2023",
-          "text": "Es el instituto más prestigioso de mi país en cuanto a tecnología y ahí tomé la tecnología de desarrollo de software."
+          "text": "Es el instituto más prestigioso en mi país en términos de tecnología y aquí tomé la tecnología de desarrollo de software."
         },
         {
+          "date": "Abr - Ago 2022",
+          "title": "Bootcamp de Talendig",
+          "text": "Tomé este bootcamp porque quería aprender más sobre desarrollo web y aquí aprendí HTML, CSS, Javascript, React, Node y más."
+        },
+        {
+          "date": "Jun - Ago 2022",
+          "title": "Platzi",
+          "text": "Hice la escuela de desarrollo web en esta plataforma, donde aprendí Fundamentos de HTML, CSS, Javascript, también React y Node."
+        },
+        {
+          "date": "Sep 2021 - Feb 2022",
           "title": "FreeCodeCamp",
-          "date": "Septiembre 2021 - Febrero 2022",
-          "text": "Decidí tomar algunos bootcamps en esta plataforma debido a su prestigio y tomé Web Responsive Design, Javascript Algorithms and Data Structures y Backend Development and Apis."
+          "text": "Decidí tomar algunos bootcamps en esta plataforma debido a su prestigio y tomé Diseño Web Responsivo, Algoritmos y Estructuras de Datos en Javascript y Desarrollo de Backend y Apis."
         }
       ]
     },
@@ -46,26 +51,36 @@
       "timeline": {
         "freelace": {
           "title": "Freelance",
-          "date": "Julio 2022 - Presente",
-          "text": "Actualmente trabajo como freelance, donde he trabajado con diferentes clientes, desarrando paginas y aplicaciones web."
+          "date": "Jul 2022 - Presente",
+          "text": "Actualmente trabajo como freelance, donde he trabajado con diferentes clientes, desarrollando páginas web y aplicaciones."
         },
         "government": {
           "title": "Dirección General de Contrataciones Públicas",
-          "date": "Diciembre 2022 - Presente",
+          "date": "Dic 2022 - Presente",
           "text": "Actualmente trabajo como Desarrollador Frontend en la Dirección General de Contrataciones Públicas, donde he desarrollado aplicaciones web para la institución."
         },
         "talendig": {
           "title": "Talendig",
-          "date": "Enero 2022 - Diciembre 2022",
+          "date": "Ene 2022 - Dic 2022",
           "text": "Trabajé como Desarrollador Full Stack en Talendig, una empresa que ofrece bootcamps para formar a personas en la industria de la tecnología."
         }
       }
     },
     "quotes": {
       "title": "Cita",
-      "quote": " “Primero resuelve el problema, después escribe el código”",
+      "quote": "“Primero resuelve el problema, después escribe el código.”",
       "author": "John Johnson",
       "position": "Programador"
     }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraphs": {
+      "greetings": "Hola! Soy ",
+      "age": " un apasionado desarrollador de software, tengo ",
+      "years": " años, con una sed insaciable de conocimiento. Actualmente, estoy inmerso en mi educación en el Instituto Tecnológico de las Américas, donde estoy adquiriendo las habilidades y conocimientos necesarios para sobresalir en el mundo de la tecnología. Pero mi aprendizaje no se detiene en el aula; soy un ávido autodidacta, siempre buscando oportunidades para aprender más y empujar los límites.",
+      "learning": "Sin embargo, mi aprendizaje no termina en el aula; soy un autodidacta ávido, siempre buscando oportunidades para aprender más y empujar los límites. Además de mi educación y trabajo en la Dirección General de Contrataciones Públicas desde diciembre de 2022, también soy un apasionado autónomo y desarrollador de software. Trabajar de forma independiente me permite aplicar mis habilidades y conocimientos a una variedad de proyectos emocionantes, y disfruto colaborando con diferentes clientes y empresas para ofrecer soluciones tecnológicas personalizadas.",
+      "mission": "La tecnología es mi verdadera pasión, y mi misión es utilizar mis habilidades como desarrollador de software para crear soluciones innovadoras que mejoren la vida de las personas."
+     }
   }
 }

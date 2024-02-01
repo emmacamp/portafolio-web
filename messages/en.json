@@ -3,7 +3,7 @@
     "nav": {
       "routes": {
         "home": "Home",
-        "about": "About",
+        "about": "About Me",
         "projects": "Projects",
         "contact": "Contact"
       }
@@ -20,24 +20,29 @@
       "subTitle": "Bootcamps and More",
       "cards": [
         {
+          "date": "Jan 2019 - Present",
           "title": "Self-taught",
-          "date": "January 2019 - Present",
-          "text": "I am self-taught, I learn from everything and everyone, I like learning and sharing what I learn."
+          "text": "I'm a person who loves learning new technologies and doing projects with said technologies."
         },
         {
-          "title": "Platzi",
-          "date": "June 2020 - June 2021",
-          "text": "I did the web development school on this platform, where I learned HTML Fundamentals, CSS, Javascript also React and Node."
-        },
-        {
+          "date": "Jan 2021 - Dec 2023",
           "title": "ITLA",
-          "date": "January 2021 - September 2023",
-          "text": "It is the most prestigious institute in my country in terms of technology and there I took software development technology."
+          "text": "It's the most prestigious institute in my country in terms of technology and here I took the software development technology."
         },
         {
+          "date": "Apr - Aug 2022",
+          "title": "Talendig Bootcamp",
+          "text": "I took this bootcamp because I wanted to learn more about web development and here I learned HTML, CSS, Javascript, React, Node, and more."
+        },
+        {
+          "date": "Jun - Aug 2022",
+          "title": "Platzi",
+          "text": "I did the web development school on this platform, where I learned Fundamentals HTML, CSS, Javascript also React and Node."
+        },
+        {
+          "date": "Sep 2021 - Feb 2022",
           "title": "FreeCodeCamp",
-          "date": "September 2021 - February 2022",
-          "text": "I decided to take some bootcamps on this platform due to its prestige and I took Web Responsive Design, Javascript Algorithms and Data Structures and Backend Development and Apis."
+          "text": "I decided to take some bootcamps on this platform because of its prestige and I took Web Responsive Design, Javascript Algorithms and Data Structures and Backend Development and Apis."
         }
       ]
     },
@@ -46,17 +51,17 @@
       "timeline": {
         "freelace": {
           "title": "Freelance",
-          "date": "July 2022 - Present",
+          "date": "Jul 2022 - Present",
           "text": "I currently work as a freelance, where I have worked with different clients, developing web pages and applications."
         },
         "government": {
           "title": "General Directorate of Public Procurement",
-          "date": "December 2022 - Present",
+          "date": "Dec 2022 - Present",
           "text": "I currently work as a Frontend Developer at the General Directorate of Public Procurement, where I have developed web applications for the institution."
         },
         "talendig": {
           "title": "Talendig",
-          "date": "January 2022 - December 2022",
+          "date": "Jan 2022 - Dec 2022",
           "text": "I worked as a Full Stack Developer at Talendig, a company that offers bootcamps to train people in the technology industry."
         }
       }
@@ -66,6 +71,16 @@
       "quote": "“First, solve the problem. Then, write the code.”",
       "author": "John Johnson",
       "position": "Programmer"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": {
+      "greetings": "Hello! I'm ",
+      "age": ", a passionate software developer, I'm ",
+      "years": " years old, with an insatiable thirst for knowledge. Currently, I'm immersed in my education at the Instituto Tecnológico de las Américas, where I'm acquiring the skills and knowledge necessary to excel in the world of technology. But my learning doesn't stop in the classroom; I'm an avid self-learner, always seeking opportunities to learn more and push boundaries.",
+      "learning": "However, my learning doesn't end in the classroom; I'm an avid self-learner, always seeking opportunities to learn more and push boundaries. In addition to my education and work at the General Directorate of Public Procurement since December 2022, I'm also a passionate freelancer and software developer. Working independently allows me to apply my skills and knowledge to a variety of exciting projects, and I enjoy collaborating with different clients and companies to deliver customized technological solutions.",
+      "mission": "Technology is my true passion, and my mission is to utilize my skills as a software developer to create innovative solutions that enhance people's lives."
     }
   }
 }
