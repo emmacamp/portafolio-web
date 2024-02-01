@@ -1,0 +1,71 @@
+{
+  "Index": {
+    "nav": {
+      "routes": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+      }
+    },
+    "header": {
+      "headline": "Desarrollador de Software",
+      "button": {
+        "text": "Descargar CV",
+        "url": "contact.html"
+      }
+    },
+    "education": {
+      "title": "Educación",
+      "subTitle": "Bootcamps y mas",
+      "cards": [
+        {
+          "title": "self-taught",
+          "date": "Enero 2019 - Presente",
+          "text": "Soy autodidacta, aprendo de todo y de todos, me gusta aprender y compartir lo que aprendo."
+        },
+        {
+          "title": "Platzi",
+          "date": "Junio 2020 - Junio 2021",
+          "text": "Realice la escuela de desarrollo web en esta plataforma, donde aprendí Fundamentos HTML, CSS, Javascript también React y Node."
+        },
+        {
+          "title": "ITLA",
+          "date": "Enero 2021 - Septiembre 2023",
+          "text": "Es el instituto más prestigioso de mi país en cuanto a tecnología y ahí tomé la tecnología de desarrollo de software."
+        },
+        {
+          "title": "FreeCodeCamp",
+          "date": "Septiembre 2021 - Febrero 2022",
+          "text": "Decidí tomar algunos bootcamps en esta plataforma debido a su prestigio y tomé Web Responsive Design, Javascript Algorithms and Data Structures y Backend Development and Apis."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia Laboral",
+      "timeline": {
+        "freelace": {
+          "title": "Freelance",
+          "date": "Julio 2022 - Presente",
+          "text": "Actualmente trabajo como freelance, donde he trabajado con diferentes clientes, desarrando paginas y aplicaciones web."
+        },
+        "government": {
+          "title": "Dirección General de Contrataciones Públicas",
+          "date": "Diciembre 2022 - Presente",
+          "text": "Actualmente trabajo como Desarrollador Frontend en la Dirección General de Contrataciones Públicas, donde he desarrollado aplicaciones web para la institución."
+        },
+        "talendig": {
+          "title": "Talendig",
+          "date": "Enero 2022 - Diciembre 2022",
+          "text": "Trabajé como Desarrollador Full Stack en Talendig, una empresa que ofrece bootcamps para formar a personas en la industria de la tecnología."
+        }
+      }
+    },
+    "quotes": {
+      "title": "Cita",
+      "quote": " “Primero resuelve el problema, después escribe el código”",
+      "author": "John Johnson",
+      "position": "Programador"
+    }
+  }
+}

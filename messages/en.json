@@ -1,0 +1,71 @@
+{
+  "Index": {
+    "nav": {
+      "routes": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+      }
+    },
+    "header": {
+      "headline": "Software Developer",
+      "button": {
+        "text": "Download CV",
+        "url": "contact.html"
+      }
+    },
+    "education": {
+      "title": "Education",
+      "subTitle": "Bootcamps and More",
+      "cards": [
+        {
+          "title": "Self-taught",
+          "date": "January 2019 - Present",
+          "text": "I am self-taught, I learn from everything and everyone, I like learning and sharing what I learn."
+        },
+        {
+          "title": "Platzi",
+          "date": "June 2020 - June 2021",
+          "text": "I did the web development school on this platform, where I learned HTML Fundamentals, CSS, Javascript also React and Node."
+        },
+        {
+          "title": "ITLA",
+          "date": "January 2021 - September 2023",
+          "text": "It is the most prestigious institute in my country in terms of technology and there I took software development technology."
+        },
+        {
+          "title": "FreeCodeCamp",
+          "date": "September 2021 - February 2022",
+          "text": "I decided to take some bootcamps on this platform due to its prestige and I took Web Responsive Design, Javascript Algorithms and Data Structures and Backend Development and Apis."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Work Experience",
+      "timeline": {
+        "freelace": {
+          "title": "Freelance",
+          "date": "July 2022 - Present",
+          "text": "I currently work as a freelance, where I have worked with different clients, developing web pages and applications."
+        },
+        "government": {
+          "title": "General Directorate of Public Procurement",
+          "date": "December 2022 - Present",
+          "text": "I currently work as a Frontend Developer at the General Directorate of Public Procurement, where I have developed web applications for the institution."
+        },
+        "talendig": {
+          "title": "Talendig",
+          "date": "January 2022 - December 2022",
+          "text": "I worked as a Full Stack Developer at Talendig, a company that offers bootcamps to train people in the technology industry."
+        }
+      }
+    },
+    "quotes": {
+      "title": "Quote",
+      "quote": "“First, solve the problem. Then, write the code.”",
+      "author": "John Johnson",
+      "position": "Programmer"
+    }
+  }
+}
